@@ -1,0 +1,43 @@
+
+public class TennisGame {
+
+	/**
+	 * This function get point's description
+	 * @param point the point are described as:
+	 * 		0 love
+	 * 		1 fifteen
+	 * 		2 thirty
+	 * 		3 forty
+	 * 	   -1 advantage
+	 * 	   -2 deuce
+	 * @return point described
+	 */
+	public String getScore(int point){
+		String score = "";
+		if (point == 0){
+			score = "love";
+		}else if(point == 1){
+			score ="fifteen";
+		}else if(point == 2){
+			score = "thirty";
+		}else if(point == 3){
+			score = "forty";
+		}else if(point == -1){
+			score = "advantage";
+		}else if(point == -2){
+			score = "deuce";
+		}
+		
+		return score;
+	}
+	
+	public void main(){
+		String lsScore = getScore(1);
+		System.out.println(lsScore);
+		
+	}
+	
+	
+	
+	
+}

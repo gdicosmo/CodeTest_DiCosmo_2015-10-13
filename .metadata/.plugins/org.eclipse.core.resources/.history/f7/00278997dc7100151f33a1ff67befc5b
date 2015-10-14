@@ -1,0 +1,56 @@
+/**
+ * @author Di Cosmo
+ * Player class: describe the tennis player
+ */
+public class Player {
+	private int point;
+	private int advantage;
+	private String namePlayer;
+	private int winner;
+	
+	/**
+	 * Costructor: variable initialization
+	 */
+	public Player() {
+		setPoint(0);
+		setAdvantage(0);
+		setNamePlayer("");
+		setWinner(0);
+	}
+
+	/*
+	 * getter and setter
+	 */
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	public int getAdvantage() {
+		return advantage;
+	}
+
+	public void setAdvantage(int advantage) {
+		this.advantage = advantage;
+	}
+
+	public String getNamePlayer() {
+		return namePlayer;
+	}
+
+	public void setNamePlayer(String namePlayer) {
+		this.namePlayer = namePlayer;
+	}
+
+	public int getWinner() {
+		return winner;
+	}
+
+	public void setWinner(int winner) {
+		this.winner = winner;
+	}
+	
+}
